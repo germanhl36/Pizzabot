@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3920D31126E17FBA00DC90AA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3920D31026E17FBA00DC90AA /* main.swift */; };
+		3920D31926E1A76200DC90AA /* PointsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3920D31826E1A76200DC90AA /* PointsList.swift */; };
+		3920D31B26E1A7DA00DC90AA /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3920D31A26E1A7DA00DC90AA /* Grid.swift */; };
+		3920D31D26E1BB1900DC90AA /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3920D31C26E1BB1900DC90AA /* Point.swift */; };
+		3920D32026E1BB4500DC90AA /* ValidatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3920D31F26E1BB4500DC90AA /* ValidatorProtocol.swift */; };
+		3920D32526E1C28B00DC90AA /* ProcessArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3920D32426E1C28B00DC90AA /* ProcessArguments.swift */; };
+		3920D32726E1C2ED00DC90AA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3920D32626E1C2ED00DC90AA /* Constants.swift */; };
+		3920D32926E1C8AF00DC90AA /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3920D32826E1C8AF00DC90AA /* ValidationResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +32,13 @@
 /* Begin PBXFileReference section */
 		3920D30D26E17FBA00DC90AA /* Pizzabot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Pizzabot; sourceTree = BUILT_PRODUCTS_DIR; };
 		3920D31026E17FBA00DC90AA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		3920D31826E1A76200DC90AA /* PointsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsList.swift; sourceTree = "<group>"; };
+		3920D31A26E1A7DA00DC90AA /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		3920D31C26E1BB1900DC90AA /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		3920D31F26E1BB4500DC90AA /* ValidatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorProtocol.swift; sourceTree = "<group>"; };
+		3920D32426E1C28B00DC90AA /* ProcessArguments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessArguments.swift; sourceTree = "<group>"; };
+		3920D32626E1C2ED00DC90AA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3920D32826E1C8AF00DC90AA /* ValidationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +71,40 @@
 		3920D30F26E17FBA00DC90AA /* Pizzabot */ = {
 			isa = PBXGroup;
 			children = (
+				3945A4E926E2AC400050CAEA /* Enums */,
+				3920D31E26E1BB2B00DC90AA /* Protocols */,
+				3920D32126E1BB7200DC90AA /* Structs */,
 				3920D31026E17FBA00DC90AA /* main.swift */,
 			);
 			path = Pizzabot;
+			sourceTree = "<group>";
+		};
+		3920D31E26E1BB2B00DC90AA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3920D31F26E1BB4500DC90AA /* ValidatorProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		3920D32126E1BB7200DC90AA /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				3920D31A26E1A7DA00DC90AA /* Grid.swift */,
+				3920D31C26E1BB1900DC90AA /* Point.swift */,
+				3920D31826E1A76200DC90AA /* PointsList.swift */,
+				3920D32426E1C28B00DC90AA /* ProcessArguments.swift */,
+				3920D32626E1C2ED00DC90AA /* Constants.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		3945A4E926E2AC400050CAEA /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				3920D32826E1C8AF00DC90AA /* ValidationResult.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +164,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3920D32526E1C28B00DC90AA /* ProcessArguments.swift in Sources */,
+				3920D32926E1C8AF00DC90AA /* ValidationResult.swift in Sources */,
+				3920D32026E1BB4500DC90AA /* ValidatorProtocol.swift in Sources */,
+				3920D31D26E1BB1900DC90AA /* Point.swift in Sources */,
+				3920D31B26E1A7DA00DC90AA /* Grid.swift in Sources */,
+				3920D32726E1C2ED00DC90AA /* Constants.swift in Sources */,
+				3920D31926E1A76200DC90AA /* PointsList.swift in Sources */,
 				3920D31126E17FBA00DC90AA /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
