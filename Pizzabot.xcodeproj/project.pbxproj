@@ -8,13 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		3920D31126E17FBA00DC90AA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3920D31026E17FBA00DC90AA /* main.swift */; };
-		3920D31926E1A76200DC90AA /* PointsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3920D31826E1A76200DC90AA /* PointsList.swift */; };
+		3920D31926E1A76200DC90AA /* PointList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3920D31826E1A76200DC90AA /* PointList.swift */; };
 		3920D31B26E1A7DA00DC90AA /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3920D31A26E1A7DA00DC90AA /* Grid.swift */; };
 		3920D31D26E1BB1900DC90AA /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3920D31C26E1BB1900DC90AA /* Point.swift */; };
 		3920D32026E1BB4500DC90AA /* ValidatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3920D31F26E1BB4500DC90AA /* ValidatorProtocol.swift */; };
-		3920D32526E1C28B00DC90AA /* ProcessArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3920D32426E1C28B00DC90AA /* ProcessArguments.swift */; };
+		3920D32526E1C28B00DC90AA /* PathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3920D32426E1C28B00DC90AA /* PathGenerator.swift */; };
 		3920D32726E1C2ED00DC90AA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3920D32626E1C2ED00DC90AA /* Constants.swift */; };
 		3920D32926E1C8AF00DC90AA /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3920D32826E1C8AF00DC90AA /* ValidationResult.swift */; };
+		3939877F26E82C7400F3C236 /* PizzabotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3939877E26E82C7400F3C236 /* PizzabotTests.swift */; };
+		3939878526E8303900F3C236 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3939878426E8303900F3C236 /* String+Extensions.swift */; };
+		3939878826E8436800F3C236 /* PathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3920D32426E1C28B00DC90AA /* PathGenerator.swift */; };
+		3939878926E8437A00F3C236 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3920D31026E17FBA00DC90AA /* main.swift */; };
+		3939878A26E8437D00F3C236 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3920D32626E1C2ED00DC90AA /* Constants.swift */; };
+		3939878B26E8438500F3C236 /* PointList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3920D31826E1A76200DC90AA /* PointList.swift */; };
+		3939878C26E8438800F3C236 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3920D31C26E1BB1900DC90AA /* Point.swift */; };
+		3939878D26E8438B00F3C236 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3920D31A26E1A7DA00DC90AA /* Grid.swift */; };
+		3939878E26E8439000F3C236 /* ValidatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3920D31F26E1BB4500DC90AA /* ValidatorProtocol.swift */; };
+		3939878F26E8439500F3C236 /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3920D32826E1C8AF00DC90AA /* ValidationResult.swift */; };
+		3939879026E8439800F3C236 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3939878426E8303900F3C236 /* String+Extensions.swift */; };
+		39526CB926E9373700E6C4D3 /* GridProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39526CB826E9373700E6C4D3 /* GridProtocol.swift */; };
+		39526CBB26E937A100E6C4D3 /* PointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39526CBA26E937A100E6C4D3 /* PointProtocol.swift */; };
+		39526CBD26E937D700E6C4D3 /* PointListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39526CBC26E937D700E6C4D3 /* PointListProtocol.swift */; };
+		39526CBE26E93C8900E6C4D3 /* GridProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39526CB826E9373700E6C4D3 /* GridProtocol.swift */; };
+		39526CBF26E93C8C00E6C4D3 /* PointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39526CBA26E937A100E6C4D3 /* PointProtocol.swift */; };
+		39526CC026E93C8F00E6C4D3 /* PointListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39526CBC26E937D700E6C4D3 /* PointListProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,17 +49,32 @@
 /* Begin PBXFileReference section */
 		3920D30D26E17FBA00DC90AA /* Pizzabot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Pizzabot; sourceTree = BUILT_PRODUCTS_DIR; };
 		3920D31026E17FBA00DC90AA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		3920D31826E1A76200DC90AA /* PointsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsList.swift; sourceTree = "<group>"; };
+		3920D31826E1A76200DC90AA /* PointList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointList.swift; sourceTree = "<group>"; };
 		3920D31A26E1A7DA00DC90AA /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 		3920D31C26E1BB1900DC90AA /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		3920D31F26E1BB4500DC90AA /* ValidatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorProtocol.swift; sourceTree = "<group>"; };
-		3920D32426E1C28B00DC90AA /* ProcessArguments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessArguments.swift; sourceTree = "<group>"; };
+		3920D32426E1C28B00DC90AA /* PathGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathGenerator.swift; sourceTree = "<group>"; };
 		3920D32626E1C2ED00DC90AA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3920D32826E1C8AF00DC90AA /* ValidationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationResult.swift; sourceTree = "<group>"; };
+		3939877C26E82C7400F3C236 /* PizzabotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PizzabotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3939877E26E82C7400F3C236 /* PizzabotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzabotTests.swift; sourceTree = "<group>"; };
+		3939878026E82C7400F3C236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3939878426E8303900F3C236 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		39526CB826E9373700E6C4D3 /* GridProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridProtocol.swift; sourceTree = "<group>"; };
+		39526CBA26E937A100E6C4D3 /* PointProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointProtocol.swift; sourceTree = "<group>"; };
+		39526CBC26E937D700E6C4D3 /* PointListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointListProtocol.swift; sourceTree = "<group>"; };
+		39526CC126E93DC700E6C4D3 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3920D30A26E17FBA00DC90AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3939877926E82C7400F3C236 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -55,7 +87,9 @@
 		3920D30426E17FBA00DC90AA = {
 			isa = PBXGroup;
 			children = (
+				39526CC126E93DC700E6C4D3 /* README */,
 				3920D30F26E17FBA00DC90AA /* Pizzabot */,
+				3939877D26E82C7400F3C236 /* PizzabotTests */,
 				3920D30E26E17FBA00DC90AA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				3920D30D26E17FBA00DC90AA /* Pizzabot */,
+				3939877C26E82C7400F3C236 /* PizzabotTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +106,7 @@
 		3920D30F26E17FBA00DC90AA /* Pizzabot */ = {
 			isa = PBXGroup;
 			children = (
+				3939878626E8303E00F3C236 /* Extensions */,
 				3945A4E926E2AC400050CAEA /* Enums */,
 				3920D31E26E1BB2B00DC90AA /* Protocols */,
 				3920D32126E1BB7200DC90AA /* Structs */,
@@ -83,6 +119,9 @@
 			isa = PBXGroup;
 			children = (
 				3920D31F26E1BB4500DC90AA /* ValidatorProtocol.swift */,
+				39526CB826E9373700E6C4D3 /* GridProtocol.swift */,
+				39526CBA26E937A100E6C4D3 /* PointProtocol.swift */,
+				39526CBC26E937D700E6C4D3 /* PointListProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -92,11 +131,28 @@
 			children = (
 				3920D31A26E1A7DA00DC90AA /* Grid.swift */,
 				3920D31C26E1BB1900DC90AA /* Point.swift */,
-				3920D31826E1A76200DC90AA /* PointsList.swift */,
-				3920D32426E1C28B00DC90AA /* ProcessArguments.swift */,
+				3920D31826E1A76200DC90AA /* PointList.swift */,
+				3920D32426E1C28B00DC90AA /* PathGenerator.swift */,
 				3920D32626E1C2ED00DC90AA /* Constants.swift */,
 			);
 			path = Structs;
+			sourceTree = "<group>";
+		};
+		3939877D26E82C7400F3C236 /* PizzabotTests */ = {
+			isa = PBXGroup;
+			children = (
+				3939877E26E82C7400F3C236 /* PizzabotTests.swift */,
+				3939878026E82C7400F3C236 /* Info.plist */,
+			);
+			path = PizzabotTests;
+			sourceTree = "<group>";
+		};
+		3939878626E8303E00F3C236 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3939878426E8303900F3C236 /* String+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		3945A4E926E2AC400050CAEA /* Enums */ = {
@@ -127,6 +183,23 @@
 			productReference = 3920D30D26E17FBA00DC90AA /* Pizzabot */;
 			productType = "com.apple.product-type.tool";
 		};
+		3939877B26E82C7400F3C236 /* PizzabotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3939878126E82C7400F3C236 /* Build configuration list for PBXNativeTarget "PizzabotTests" */;
+			buildPhases = (
+				3939877826E82C7400F3C236 /* Sources */,
+				3939877926E82C7400F3C236 /* Frameworks */,
+				3939877A26E82C7400F3C236 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PizzabotTests;
+			productName = PizzabotTests;
+			productReference = 3939877C26E82C7400F3C236 /* PizzabotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -137,6 +210,9 @@
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					3920D30C26E17FBA00DC90AA = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					3939877B26E82C7400F3C236 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
 				};
@@ -155,23 +231,58 @@
 			projectRoot = "";
 			targets = (
 				3920D30C26E17FBA00DC90AA /* Pizzabot */,
+				3939877B26E82C7400F3C236 /* PizzabotTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3939877A26E82C7400F3C236 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3920D30926E17FBA00DC90AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3920D32526E1C28B00DC90AA /* ProcessArguments.swift in Sources */,
+				3920D32526E1C28B00DC90AA /* PathGenerator.swift in Sources */,
 				3920D32926E1C8AF00DC90AA /* ValidationResult.swift in Sources */,
 				3920D32026E1BB4500DC90AA /* ValidatorProtocol.swift in Sources */,
+				39526CBB26E937A100E6C4D3 /* PointProtocol.swift in Sources */,
+				39526CB926E9373700E6C4D3 /* GridProtocol.swift in Sources */,
 				3920D31D26E1BB1900DC90AA /* Point.swift in Sources */,
+				39526CBD26E937D700E6C4D3 /* PointListProtocol.swift in Sources */,
+				3939878526E8303900F3C236 /* String+Extensions.swift in Sources */,
 				3920D31B26E1A7DA00DC90AA /* Grid.swift in Sources */,
 				3920D32726E1C2ED00DC90AA /* Constants.swift in Sources */,
-				3920D31926E1A76200DC90AA /* PointsList.swift in Sources */,
+				3920D31926E1A76200DC90AA /* PointList.swift in Sources */,
 				3920D31126E17FBA00DC90AA /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3939877826E82C7400F3C236 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3939879026E8439800F3C236 /* String+Extensions.swift in Sources */,
+				39526CBE26E93C8900E6C4D3 /* GridProtocol.swift in Sources */,
+				3939878B26E8438500F3C236 /* PointList.swift in Sources */,
+				3939878826E8436800F3C236 /* PathGenerator.swift in Sources */,
+				3939878F26E8439500F3C236 /* ValidationResult.swift in Sources */,
+				3939878E26E8439000F3C236 /* ValidatorProtocol.swift in Sources */,
+				3939878C26E8438800F3C236 /* Point.swift in Sources */,
+				3939877F26E82C7400F3C236 /* PizzabotTests.swift in Sources */,
+				3939878926E8437A00F3C236 /* main.swift in Sources */,
+				3939878D26E8438B00F3C236 /* Grid.swift in Sources */,
+				39526CBF26E93C8C00E6C4D3 /* PointProtocol.swift in Sources */,
+				3939878A26E8437D00F3C236 /* Constants.swift in Sources */,
+				39526CC026E93C8F00E6C4D3 /* PointListProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +410,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y6VKNRYN4L;
 				ENABLE_HARDENED_RUNTIME = YES;
+				EXCLUDED_ARCHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -310,6 +422,40 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y6VKNRYN4L;
 				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		3939878226E82C7400F3C236 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PizzabotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.plebesoft.PizzabotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3939878326E82C7400F3C236 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PizzabotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.plebesoft.PizzabotTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -332,6 +478,15 @@
 			buildConfigurations = (
 				3920D31526E17FBA00DC90AA /* Debug */,
 				3920D31626E17FBA00DC90AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3939878126E82C7400F3C236 /* Build configuration list for PBXNativeTarget "PizzabotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3939878226E82C7400F3C236 /* Debug */,
+				3939878326E82C7400F3C236 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

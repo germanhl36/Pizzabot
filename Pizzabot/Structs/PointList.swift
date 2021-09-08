@@ -7,12 +7,21 @@
 
 import Foundation
 
-struct PointList:ValidatorProtocol {
-    var inputString:String
-    var grid:Grid?
-    var initialChar:Character
-    var closingChar:Character
-    var divisionChar:Character
+struct PointList:PointListProtocol {
+
+    private var inputString:String
+    private var grid:GridProtocol
+    private var initialChar:Character
+    private var closingChar:Character
+    private var divisionChar:Character
+    
+    init(inputString:String, grid:GridProtocol, initialChar:Character, closingChar:Character, divisionChar:Character) {
+        self.inputString = inputString
+        self.grid = grid
+        self.initialChar = initialChar
+        self.closingChar = closingChar
+        self.divisionChar = divisionChar
+    }
     
     func validate() -> ValidationResult {
         let countOpeningChar = inputString.filter { char in
@@ -32,8 +41,9 @@ struct PointList:ValidatorProtocol {
             for value in values {
                 let str = String(value)
                 let point = self.generatePointFromString(str: str)
-                if point.validate() == ValidationResult.InvalidPointFormat {
-                    return ValidationResult.InvalidPointFormat
+                let pointValidationResult = point.validate()
+                if pointValidationResult != ValidationResult.Success {
+                    return pointValidationResult
                 }
                 
             }
@@ -42,8 +52,8 @@ struct PointList:ValidatorProtocol {
         return ValidationResult.Success
     }
     
-    func generatePoints() -> [Point] {
-        var result:[Point] = []
+    func generatePoints() -> [PointProtocol] {
+        var result:[PointProtocol] = []
         let values = inputString.split(separator: closingChar)
         for value in values {
             let str = String(value)
@@ -55,7 +65,7 @@ struct PointList:ValidatorProtocol {
         
     }
     
-    private func generatePointFromString(str:String) -> Point {
+    private func generatePointFromString(str:String) -> PointProtocol {
         var valueStr = str
         if valueStr.contains(initialChar) {
            valueStr = valueStr.replacingOccurrences(of: String(initialChar), with: "")

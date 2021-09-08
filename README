@@ -1,0 +1,58 @@
+In the main file we have the pizzabot function that  is in charge of take the input arguments and generate, a grid,
+a point list and the path generator to return the path or a string with the error found
+
+
+Used Structures:
+
+PathGenerator: takes a grid and a point list as parameters
+Public functions:
+
+- validate : I execute this function before generate the path, this function calls the validate functions of the grid and the pointlist to make sure they valid
+
+- getPath : this function return the path need to deliber all the pizzas
+
+Private functions:
+-  getMovements : return a string with the movements inside the grid to navigate to a new position
+        Parameters:
+        currentPosition:Int: the current position in the grid before moving to the next point
+        pointPosition:Int: the next point position
+        incrementalDirection:String: the char to be used in case that the next point is greater than the current point
+        decrementalDirection:String: the char to be used in case that the next point is smaller than the current point
+
+
+
+
+
+PointList: takes a grid, the inputString with the part of the coordenates of the points, initialChar in this case is "(", closingChar in this case is ")", divisionChar in this is "," as parameters.
+    Is in charge of generate the list of points inside the grid
+
+Public functions:
+- validate : validate that the list is generated properly using the format (#,#) (#,#) also validates that all the points are valid
+
+- generatePoints : generate the list of points to deliber the pizzas
+    
+Private functions:
+    generatePointFromString: create a point in the grid
+    Parameters:
+    str:String: a string the coordenates for a point on the grid
+    
+
+
+
+
+Point : is in charge of create a point in the grid
+         takes the input:String of a point with format "#,#", divisionChar in this case is "," and a grid
+
+Public functions:
+- validate : validate that the point is generated properly using the format #,#  also validates that the point is valid and inside the grid
+
+- generatePoints : generate the list of points to deliber the pizzas
+
+
+Grid : is in charge of create a Grid
+         takes the input:String of a point with format "#x#", divisionChar in this case is ","
+
+Public functions:
+- validate : validate that the grid is generated properly using the format #x# 
+
+- calculateSize : returns the MxN size of the grid

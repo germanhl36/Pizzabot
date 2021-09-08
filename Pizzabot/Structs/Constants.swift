@@ -11,4 +11,11 @@ struct Constants {
     static let closingChar:Character = ")"
     static let dividingChar:Character = ","
     static let dividigCharGridSize:Character = "x"
+    
+    static let increadisingInXChar = "E"
+    static let decreasingInXChar = "W"
+    
+    static let increadisingInYChar = "N"
+    static let decreasingInYChar = "S"
+    static let dropChar = "D"
 }

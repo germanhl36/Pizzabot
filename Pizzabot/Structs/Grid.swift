@@ -6,9 +6,14 @@
 //
 
 import Foundation
-struct Grid:ValidatorProtocol {
-    var input:String
-    var divisionChar:Character
+struct Grid:GridProtocol {
+    private var input:String
+    private var divisionChar:Character
+    
+    init(input:String, divisionChar:Character) {
+        self.input = input
+        self.divisionChar = divisionChar
+    }
     
     func validate() -> ValidationResult {
         if input.contains(divisionChar) {

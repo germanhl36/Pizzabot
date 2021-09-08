@@ -7,16 +7,18 @@
 
 import Foundation
 
-struct Point:ValidatorProtocol {
-    var input:String
-    var divisionChar:Character
-    var grid:Grid?
+struct Point:PointProtocol {
+    private var input:String
+    private var divisionChar:Character
+    private var grid:GridProtocol
     
+    init(input:String, divisionChar:Character, grid:GridProtocol) {
+        self.input = input
+        self.divisionChar = divisionChar
+        self.grid = grid
+    }
     
     func validate() -> ValidationResult {
-        guard let grid = self.grid else {
-            return ValidationResult.InvalidMatrixSizeFormat
-        }
         let gridSize = grid.calculateSize()
         
         if input.contains(divisionChar) {
