@@ -21,6 +21,10 @@ class PizzabotTests: XCTestCase {
         XCTAssertEqual(pizzabot("4x10.5 (1, 3) (4, 4)"), "Please use integer numbers for the grid size and point positions coordenates")
     }
     
+    func testpizzbot_invalid_matrix_with_letter(){
+        XCTAssertEqual(pizzabot("4xB (1, 3) (4, 4)"), "Please use integer numbers for the grid size and point positions coordenates")
+    }
+    
     func test_pizzabot_invalid_grid_dimensions() {
         XCTAssertEqual(pizzabot("5x5x3 (1, 3) (4, 4)"), "Please use the format MxN for the size of the grid")
     }
@@ -31,5 +35,13 @@ class PizzabotTests: XCTestCase {
     
     func test_pizzabot_point_without_comma() {
         XCTAssertEqual(pizzabot("5x5 (1 3) (4, 4)"), "Please use the format (#,#) (#,#)")
+    }
+    
+    func test_pizzabot_point_with_float_numbers() {
+        XCTAssertEqual(pizzabot("5x5 (1, 3) (5.4, 4)"), "Please use integer numbers for the grid size and point positions coordenates")
+    }
+    
+    func test_pizzabot_point_with_letter() {
+        XCTAssertEqual(pizzabot("5x5 (1, 3) (5, A)"), "Please use integer numbers for the grid size and point positions coordenates")
     }
 }
